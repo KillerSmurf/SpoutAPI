@@ -22,15 +22,34 @@ import org.getspout.unchecked.api.event.HandlerList;
  * Called when a player joins.
  */
 public class PlayerJoinEvent extends PlayerEvent {
-	private static HandlerList handlers = new HandlerList();
 
-	@Override
-	public HandlerList getHandlers() {
-		return handlers;
-	}
+		private static HandlerList handlers = new HandlerList();
+		private String joinMessage;
 
-	public static HandlerList getHandlerList() {
-		return handlers;
-	}
+		/**
+		 * Gets the join message that is broadcasted.
+		 * 
+		 * @return the join message.
+		 */
+		public String getJoinMessage() {
+				return joinMessage;
+		}
 
+		/**
+		 * Sets the broadcasted message when a player joins.
+		 * 
+		 * @param joinMessage 
+		 */
+		public void setJoinMessage(String joinMessage) {
+				this.joinMessage = joinMessage;
+		}
+
+		@Override
+		public HandlerList getHandlers() {
+				return handlers;
+		}
+
+		public static HandlerList getHandlerList() {
+				return handlers;
+		}
 }
