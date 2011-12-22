@@ -1,14 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.getspout.unchecked.api.event.block;
 
 import org.bukkit.block.Block;
 import org.getspout.unchecked.api.event.EventSource;
 import org.getspout.unchecked.api.util.Location;
-
-
 
 /**
  *
